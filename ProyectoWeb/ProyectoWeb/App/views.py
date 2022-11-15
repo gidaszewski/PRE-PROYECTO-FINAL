@@ -42,6 +42,16 @@ def creacion_usuario(request):
                 nombre=data["nombre"], email=data["email"], contraseña=data["contraseña"])
 
             inscripcion.save()
+        
+            programa=Programa.objects.all()
+
+            info_de_temas={"programa": programa}
+
+            plantilla = loader.get_template("App/toolz.html")
+
+            documento =  plantilla.render(info_de_temas)
+
+        return HttpResponse(documento)
             
         return render(request, 'App/toolz.html')
 

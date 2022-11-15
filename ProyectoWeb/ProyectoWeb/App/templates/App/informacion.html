@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        {% load static %}
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Szew-web</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'App/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="http://127.0.0.1:8000/app/inicio">Szew</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/app/inicio">Volver a Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/app/inicio#projects">Lanzamientos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/app/inicio#signup">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">Biografía</h2>
+                        <p class="text-white-50">
+                            Franco Gidaszewski aka 'Szew' comenzó a dedicarse a la música en 2016 con 15 años de edad.
+                            Es Argentino, nació en Paraná, Entre Ríos. Actualmente vive en Santa Fe.
+                            Además de la música, es estudiante de Ingeniería Industrial en FIQ-UNL y támbien actualmente se encuentra
+                            estudiando Programación con Python en Coderhouse.
+                            Es CO-Founder de Reboot Producciones, productora de eventos de la ciudad de Santa Fe.
+                        </p>
+                        <h4 style="color:rgba(255, 255, 255, 0.494)">PRESSKIT</h4>
+                    </div>
+                </div>
+                <img class="img-fluid" src="{% static 'App/assets/img/PRESSKIT_SZEW-1.png' %}" alt="..." />
+                <img class="img-fluid" src="{% static 'App/assets/img/PRESSKIT_SZEW-2.png' %}" alt="..." />
+                <img class="img-fluid" src="{% static 'App/assets/img/PRESSKIT_SZEW-3.png' %}" alt="..." />
+            </div>
+        </section>
+    <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Szew 2022</div></footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="{% static 'App/js/scripts.js' %}"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>

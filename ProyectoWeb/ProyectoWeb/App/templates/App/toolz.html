@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        {% load static %}
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Szew-web</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'App/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="http://127.0.0.1:8000/app/inicio">Szew</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/app/inicio">Volver a Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/app/inicio#projects">Lanzamientos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/app/inicio#signup">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Projects-->
+        <section class="projects-section text-center" id="projects">
+            <div class="container align-items-center">
+                <div class="row align-items-center">
+                    <div class="align-items-center">
+                    <!-- Featured Project Row-->
+                        <div class="row align-items-center">
+                            <div class="align-items-center">
+                                <div class="align-items-center">
+                                <h5>REGISTRADO CON EXITO</h5>
+                                <h2 style="color:rgb(255, 255, 255)">TOOLZ WEB - PROXIMAMENTE</h2>
+                                <h5 style="color:rgba(0, 0, 0, 0.33)">Te enviaremos un email cuando habilitemos la web de Toolz.</h5>
+                                <h5 style="color:rgba(0, 0, 0, 0.33)">Mientras tanto, puedes ver el programa que estamos preparando</h5>
+                                <form action="{% url 'web-toolz-busqueda' %}" method="GET">
+                                    <p>
+                                        <h5>Buscar en el Programa</h5>
+                                        <p>Tema (ej: "Baterias 1"):</p>
+                                        <input type="text" name="nombre_del_tema" style="color:rgba(255, 255, 255, 0.417)">
+                                        <input type="submit" value="Buscar">
+                                    </p>
+                                </form>
+                                    <table class="table table-white">
+                                        <thead style="color:rgb(255, 255, 255)">
+                                            <tr>
+                                                <th scope="col">Tema</th>
+                                                <th scope="col">Clase numero</th>
+                                                <th scope="col">Informacion</th>
+                                            </tr>
+                                        </thead>
+                                            <tbody style="color:rgb(255, 255, 255)">
+                                                {% for i in programa %}
+                                                <tr>
+                                                    <td>{{i.nombre}}</td>
+                                                    <td>{{i.clase}}</td>
+                                                    <td>{{i.informacion}}</td>
+                                                </tr>
+                                                {% endfor %}
+                                            </tbody>
+                                    </table>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        {% load static %}
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Szew-web</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'App/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Szew</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">Información</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Lanzamientos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/app/toolz">Toolz Curso</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">SZEW</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Productor músical y DJ.</h2>
+                        <a class="btn btn-primary" href="#about">Más info</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">"La música es parte de mi vida en cada momento"</h2>
+                        <p class="text-white-50">
+                            Franco Gidaszewski aka 'Szew' es un DJ/ Productor de la ciudad de Paraná (Entre Ríos, Argentina) que desde 2016 se dedica a la música electronica. 
+                            Luego de formarse en distintos cursos con productores reconocidos dentro de la escena, y también de manera autodidacta, formó parte del dúo "Dosmind" durante 3 años, hasta que decidió incursionar en su sonido propio.
+                            Durante su carrera compartió cabina con grandes artistas internacionales y nacionales como Toman, Yaya Tamango, Max Chapman, Dale Howard, Mateo Dufour, Nacho Bolognani, Londonground y Soundprocess, entre otros. 
+                            En sus producciones como en sus sets, predomina el House y estilos derivados como Deep House, Breaks, Micro House yTech House. 
+                            Luego de pasar mucho tiempo en su estudio, editó música en sellos reconocidos internacionalmente como Pitch Recordings (UK), Visionary Grooves (USA), Urban Carden Vinyl (Argentina) y Clap Music (Argentina), son algunos de ellos. 
+                            <a href="http://127.0.0.1:8000/app/masinformacion">Presiona aquí para obtener más info.</a>
+                        </p>
+                    </div>
+                </div>
+                <!--img class="img-fluid" src="{% static 'App/assets/img/ipad.png' %}" alt="..." /-->
+            </div>
+        </section>
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{% static 'App/assets/img/IMG_1750.PNG' %}" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>'Program Select' EP [URBGWAX 001]</h4>
+                            <p class="text-black-50 mb-0">Durante 2022 se editó su primer EP 'Program Select' en formato de vinilo. Esto fue un objetivo cumplido para él ya que aspiraba llegar a eso desde sus comienzos. Aquel EP incluyó remixes de artistas nacionales como Lautaro Scavuzzo, quien aportó un track con un estilo minimalista y un sonido caliente y analogico. Lauti Mina (Founder del sello discográfico
+                                del lanzamiento) fue quien se sumó tambien con su remix
+                                del track 'Program Select'.
+                                <a href="http://127.0.0.1:8000/app/biblioteca">Presiona aquí para ver todas sus canciones.</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{% static 'App/assets/img/dj1.png' %}" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">En cabina</h4>
+                                    <p class="mb-0 text-white-50">Además de centrarse en lanzar música, tambien le intereso la idea de llevar su selección de tracks a la pista de baile. A medida que comenzó con sus primeras presentaciones, fue aumentando de nivel hasta llegar a compartir cabina con artistas internacionales y en las mejores
+                                        fiestas de su territorio.</p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{% static 'App/assets/img/dj2.png' %}" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Estilo</h4>
+                                    <p class="mb-0 text-white-50">Con referentes como Mr. Fingers, Kerri Chandler, DMX Krew, Aphex Twin, el house fue el estilo que atrapó a Szew. Hoy en día se dedica a sub-generos
+                                        del House como Deep House, Tech House, MicroHouse, Elektro, entre otros.
+                                        </p>
+                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Three Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="{% static 'App/assets/img/ableton.jpeg' %}" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Toolz</h4>
+                                    <p class="mb-0 text-white-50">Explora, aprende y comienza a crear música junto a Szew.
+                                        Haz click aquí para más info
+                                        <br />
+                                    <a href="http://127.0.0.1:8000/app/toolz">http://127.0.0.1:8000/app/toolz</a>
+                                    </p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Contact-->
+        <section class="signup-section" id="signup">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="row align-items-center">
+                    <div class="align-items-center">
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{% static 'App/assets/img/studio.jpg' %}" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4 style="color:rgb(255, 255, 255)">Registrate en el curso de Producción músical de Szew</h4>
+                            <a class="btn btn-primary" href="http://127.0.0.1:8000/app/toolz">Registrarme</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact-->
+        <section class="contact-section bg-black" id="contact">
+            <div class="container px-4 px-lg-5">
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Szew 2022</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'App/js/scripts.js' %}"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        {% block contenido %}
+
+        {% endblock %}
+
+    </body>
+</html>
